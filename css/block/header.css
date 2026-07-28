@@ -11,6 +11,7 @@
   z-index: 50;
 
   transition: transform 0.2s linear;
+  box-sizing: border-box;
 }
 .header--hidden {
   transform: translateY(-100%);
@@ -24,6 +25,7 @@
 
   z-index: 10;
   background-color: var(--color-d-blue);
+  box-sizing: border-box;
 }
 .header__in-wrepp {
   flex-grow: 1;
