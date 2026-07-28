@@ -233,10 +233,6 @@
   }
 
   .hero__slid--pod {
-    /* margin: 20px auto 0 auto;
-    font-size: clamp(30px, 2.08vw + 14px, var(--font-size-hero-pod));
-    width: 90%;
-    max-width: 1200px; */
 
     margin: 0 auto;
     font-size: clamp(30px, 2.08vw + 14px, var(--font-size-hero-pod));
@@ -319,6 +315,7 @@
     flex-grow: 1;
     background-color: var(--color-white);
     margin-left: 0;
+    flex-shrink: 0; 
     margin-bottom: 5px;
   }
 
@@ -330,6 +327,7 @@
     flex-grow: 1;
     background-color: var(--color-white);
     margin-right: 0;
+    flex-shrink: 0; 
     margin-top: 5px;
   }
 
