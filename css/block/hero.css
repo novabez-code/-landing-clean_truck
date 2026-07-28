@@ -231,10 +231,7 @@
   }
 
   .hero__slid--pod {
-    /* margin: 20px auto 0 auto;
-    font-size: clamp(30px, 2.08vw + 14px, var(--font-size-hero-pod));
-    width: 90%;
-    max-width: 1200px; */
+    
 
     margin: 0 auto;
     font-size: clamp(30px, 2.08vw + 14px, var(--font-size-hero-pod));
@@ -295,7 +292,7 @@
     top: 0;
     bottom: 0;
     right: 5%;
-    left: 95%;
+    left: auto;
 
     display: flex;
     flex-direction: column;
