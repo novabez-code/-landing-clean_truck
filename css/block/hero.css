@@ -285,6 +285,7 @@
 
   .hero__pags {
     height: 100vh;
+    width: auto;  
     max-height: 1000px;
     min-height: 650px;
 
@@ -293,6 +294,7 @@
     bottom: 0;
     right: 5%;
     left: auto;
+    transform: none; 
 
     display: flex;
     flex-direction: column;
