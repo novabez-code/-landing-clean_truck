@@ -1,0 +1,98 @@
+:root {
+  /* Цвета */
+  --color-d-blue: #061321;
+  --color-blue: #00a3ff;
+  --color-black: #212121;
+  --color-white: #ffffff;
+
+  /* Типографика */
+  --font: "Poppins", sans-serif;
+
+  /* Hero */
+  --font-size-hero-title: 25px;
+  --font-size-hero-pod: 20px;
+
+  --font-size-hero-card: 16px;
+  --font-size-hero-text: 14px;
+
+  /* Заголовок */
+  --font-size-sub_title: 14px;
+  --font-size-title: 30px;
+  --font-size-title_text: 14px;
+
+  /* Карточки преимуществ */
+  --font-size-card_pre-title: 20px;
+  --font-size-card_pre-text: 13px;
+
+  /* Карточки мойки */
+  --font-size-card_clean-title: 18px;
+  --font-size-card_clean-pice: 40px;
+  --font-size-card_clean-prim: 13px;
+  --font-size-card_clean-time: 12px;
+
+  /* Карточки о нас */
+  --font-size-card_about-title: 20px;
+  --font-size-card_about-text: 14px;
+  --font-size-card_about-in_title: 16px;
+  --font-size-card_about-prim: 13px;
+
+  /* Футер */
+  --font-size-footer-title: 20px;
+  --font-size-footer-text: 13px;
+  --font-size-footer-link: 14px;
+  --font-size-footer-time: 16px;
+
+  --font-size-footer-con: 10px;
+  --font-size-footer-c: 12px;
+  --font-size-footer-up: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0;
+
+  font-family: var(--font);
+  background-color: var(--color-white);
+}
+.sLock {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.map {
+  width: 100%;
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 45px;
+  }
+  .map {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--color-blue);
+  outline-offset: 4px;
+  border-radius: 4px;
+}

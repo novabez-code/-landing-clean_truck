@@ -1,0 +1,12 @@
+@import url("./clean.css");
+@import url("./main.css");
+
+@import url("./element/logo.css");
+@import url("./element/title.css");
+
+@import url("./block/header.css");
+@import url("./block/hero.css");
+@import url("./block/about.css");
+@import url("./block/plan.css");
+@import url("./block/about2.css");
+@import url("./block/footer.css");

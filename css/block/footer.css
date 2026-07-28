@@ -1,0 +1,230 @@
+.footer {
+  padding: 53px 0 0 0;
+
+  color: var(--color-white);
+  background-image: url("../../img/page_bg.webp");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  width: 100%;
+  margin-top: -5px;
+  z-index: 6;
+
+  -webkit-mask-image:
+    url("../../img/icon/mask/Mask1.svg"),
+    linear-gradient(to bottom, transparent 15px, #000 15px);
+  mask-image:
+    url("../../img/icon/mask/Mask1.svg"),
+    linear-gradient(to bottom, transparent 15px, #000 15px);
+
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  mask-repeat: repeat-x, no-repeat;
+
+  -webkit-mask-position:
+    top center,
+    center;
+  mask-position:
+    top center,
+    center;
+
+  -webkit-mask-size:
+    auto 157px,
+    100% 100%;
+  mask-size:
+    auto 157px,
+    100% 100%;
+}
+
+.footer__top {
+  padding-bottom: 39px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px dotted var(--color-white);
+}
+
+.footer__fb {
+  display: block;
+
+  width: 36px;
+  aspect-ratio: 1/1;
+
+  border: 1px solid var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.2s linear;
+}
+
+.footer__fb:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.footer__info {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__title {
+  font-size: var(--font-size-footer-title);
+  font-weight: 600;
+}
+
+.footer__text {
+  margin: 10px 0;
+  font-size: var(--font-size-footer-text);
+  font-weight: 300;
+  line-height: 185%;
+}
+.footer__link {
+  font-size: var(--font-size-footer-link);
+  font-weight: 300;
+
+  transition: all 0.2s linear;
+}
+.footer__link:hover {
+  color: var(--color-blue);
+  text-decoration: underline solid var(--color-blue);
+}
+
+.footer__cont table {
+  margin-top: 24px;
+}
+.footer__cont td {
+  line-height: 185%;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#ad {
+  line-height: 120%;
+}
+.footer__cont a {
+  transition: all 0.2s linear;
+}
+.footer__cont a:hover {
+  color: var(--color-blue);
+}
+
+.footer__times {
+  margin-top: 5px;
+
+  font-size: var(--font-size-footer-time);
+  font-weight: 700;
+  line-height: 185%;
+}
+
+.footer__times span {
+  color: var(--color-blue);
+}
+
+.footer__bottom {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer__conf {
+  font-size: var(--font-size-footer-con);
+  padding-right: 30px;
+  text-decoration: underline solid var(--color-white);
+}
+
+.footer_c {
+  font-size: var(--font-size-footer-c);
+}
+
+.footer__up {
+  font-size: var(--font-size-footer-up);
+  color: var(--color-blue);
+
+  transition: all 0.2s linear;
+}
+.footer__up:hover {
+  transform: scale(1.1);
+}
+
+.footer__text-f {
+  display: none;
+}
+.footer__bottom--wrap {
+  padding: 20px 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+.footer__bg {
+  display: none;
+}
+@media (min-width: 768px) {
+  :root {
+    --font-size-footer-title: 24px;
+    --font-size-footer-text: 14px;
+    --font-size-footer-link: 14px;
+    --font-size-footer-time: 16px;
+
+    --font-size-footer-con: 14px;
+    --font-size-footer-c: 14px;
+    --font-size-footer-up: 16px;
+  }
+  .footer__top {
+    padding-bottom: 10px;
+  }
+  .footer__wrapp-f {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  .footer__text-f {
+    display: block;
+    font-weight: 500;
+  }
+  .footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 0 65px 0;
+  }
+  .footer__text {
+    width: 100%;
+    max-width: 327px;
+    margin: 20px 0 30px 0;
+  }
+
+  .footer__cont table {
+    margin-top: 15px;
+  }
+
+  .footer__times {
+    margin-top: 15px;
+  }
+
+  .footer__bottom {
+    padding: 0;
+  }
+  .footer__bottom--wrap {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    padding: 30px 0;
+  }
+
+  .footer__bg {
+    display: block;
+    position: absolute;
+    bottom: 130px;
+    right: calc(50% - 600px);
+  }
+}

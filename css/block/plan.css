@@ -1,0 +1,254 @@
+.plan {
+  padding-top: 53px;
+  padding-bottom: 57px;
+
+  background-color: var(--color-white);
+
+  position: relative;
+  width: 100%;
+  margin-top: -15px;
+  z-index: 10;
+
+  -webkit-mask-image:
+    url("../../img/icon/mask/Mask1.svg"),
+    linear-gradient(to bottom, transparent 15px, #000 15px);
+  mask-image:
+    url("../../img/icon/mask/Mask1.svg"),
+    linear-gradient(to bottom, transparent 15px, #000 15px);
+
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  mask-repeat: repeat-x, no-repeat;
+
+  -webkit-mask-position:
+    top center,
+    center;
+  mask-position:
+    top center,
+    center;
+
+  -webkit-mask-size:
+    auto 157px,
+    100% 100%;
+  mask-size:
+    auto 157px,
+    100% 100%;
+}
+
+.plan__title {
+  margin-bottom: 20px;
+}
+
+.plan__title .title__div div {
+  background-color: var(--color-black);
+}
+
+.plan__cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 20px;
+
+  margin-bottom: 45px;
+}
+
+.plan__car--btn {
+  width: 134px;
+  aspect-ratio: 1.8/1;
+
+  max-width: 255px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  position: relative;
+
+  padding: 70px 0 8px 0;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  border: 2px solid var(--color-white);
+  border-radius: 6px;
+
+  transition: all 0.2s linear;
+}
+
+.plan__car--btn:hover,
+.plan__car--btn:focus,
+.plan__car--btn.active {
+  border-color: #eaeaea;
+}
+
+.btn1 {
+  background-image: url("../../img/plan/auto.webp");
+}
+.btn2 {
+  background-image: url("../../img/plan/spec.webp");
+}
+.btn3 {
+  background-image: url("../../img/plan/gruz.webp");
+}
+.btn4 {
+  background-image: url("../../img/plan/tiag.webp");
+}
+
+.plan__cards {
+  width: 100%;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  align-items: stretch;
+  justify-items: center;
+
+  padding: 15px 0 15px 0;
+}
+.plan__card {
+  text-align: center;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px #eaeaea;
+
+  padding: 40px;
+  width: 100%;
+  max-width: 255px;
+  aspect-ratio: 1/0.9;
+
+  cursor: pointer;
+  position: relative;
+
+  transition: all 0.2s linear;
+}
+
+.plan__card:hover {
+  transform: scale(1.05);
+}
+.plan__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  border-radius: 10px;
+
+  background-image: url("../../img/plan/card_bg.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.plan__card.active {
+  background-color: var(--color-d-blue);
+  color: var(--color-white);
+}
+.plan__card.active::before {
+  opacity: 0.25;
+}
+.plan__card--content {
+  position: relative;
+  z-index: 2;
+}
+.plan__card--title {
+  font-size: var(--font-size-card_clean-title);
+  font-weight: 700;
+
+  color: var(--color-blue);
+
+  margin-bottom: 10px;
+}
+
+.plan__card--price {
+  font-size: var(--font-size-card_clean-pice);
+  font-weight: 700;
+
+  margin-bottom: 30px;
+}
+.plan__card--price::after {
+  content: "₽";
+  font-size: 28px;
+}
+.plan__card--services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+.plan__card--serv {
+  position: relative;
+  padding-left: 20px;
+}
+
+.plan__card--serv::before {
+  content: "";
+  display: block;
+
+  width: 9px;
+  height: 8px;
+
+  background-image: url("../../img/icon/plan__card/no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  position: absolute;
+
+  top: 5px;
+  left: 0;
+}
+
+.plan__card--serv.ok::before {
+  background-image: url("../../img/icon/plan__card/ok.svg");
+}
+
+.plan__card--text {
+  font-size: var(--font-size-card_clean-prim);
+}
+
+.plan__time {
+  display: inline-block;
+  font-size: var(--font-size-card_clean-time);
+  font-weight: 700;
+  position: relative;
+}
+.plan__time::before {
+  display: block;
+  content: "";
+
+  width: 12px;
+  aspect-ratio: 1/1;
+
+  background-image: url("../../img/icon/plan__card/time.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 50%;
+  left: -19px;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .plan {
+    padding: 100px 0 110px 0;
+  }
+  .plan__car--btn {
+    width: 255px;
+    height: 140px;
+
+    padding-top: 100px;
+    font-size: 14px;
+  }
+  .plan__cars {
+    margin-bottom: 55px;
+  }
+}

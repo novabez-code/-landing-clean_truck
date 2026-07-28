@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /img/
+
+Sitemap: https://clean-truck.ru/sitemap.xml
+Host: https://clean-truck.ru

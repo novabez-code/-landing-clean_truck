@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #212121;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy-container {
+  max-width: 800px;
+  width: 100%;
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #061321;
+  margin-bottom: 10px;
+}
+
+.privacy-container .subtitle {
+  color: #69778a;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.privacy-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #061321;
+  margin: 25px 0 10px 0;
+}
+
+.privacy-container p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin: 10px 0;
+}
+
+.privacy-container ul {
+  padding-left: 25px;
+  margin: 10px 0 20px 0;
+}
+
+.privacy-container ul li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  list-style: disc;
+  margin: 5px 0;
+}
+
+.privacy-container a {
+  color: #00a3ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.privacy-container a:hover {
+  color: #061321;
+  text-decoration: underline;
+}
+
+.privacy-container .highlight {
+  background: #f0f7ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #00a3ff;
+  margin: 20px 0;
+}
+
+.privacy-container .footer-note {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #eaeaea;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+
+.privacy-container .close-hint {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #061321;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: none;
+}
+
+.privacy-container .close-hint:hover {
+  background: #00a3ff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 15px;
+  }
+  .privacy-container {
+    padding: 30px 20px;
+  }
+  .privacy-container h1 {
+    font-size: 24px;
+  }
+}
