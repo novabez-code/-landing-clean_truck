@@ -4,5 +4,5 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /img/
 
-Sitemap: https://clean-truck.ru/sitemap.xml
+Sitemap: https://novabez-code.github.io/-landing-clean_truck/sitemap.xml
 Host: https://novabez-code.github.io/-landing-clean_truck/
